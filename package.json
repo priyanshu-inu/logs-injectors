@@ -1,0 +1,27 @@
+{
+  "name": "logs-injector",
+  "version": "1.0.0",
+  "description": "An npm package to automatically insert console logs into functions for debugging.",
+  "main": "lib/index.js",
+  "bin": {
+    "logs-injectors": "lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "console",
+    "debugging",
+    "functions",
+    "logger"
+  ],
+  "author": "priyanshu",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/generator": "^7.0.0",
+    "@babel/parser": "^7.0.0",
+    "@babel/traverse": "^7.0.0",
+    "fs": "0.0.1-security",
+    "prettier": "^2.0.0"
+  }
+}
