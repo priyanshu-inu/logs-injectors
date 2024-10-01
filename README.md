@@ -22,7 +22,6 @@ Before installing, make sure you have [Node.js](https://nodejs.org/) installed.
 
 To install the package, run the following command:
 
-```bash
 ```npm install logs-injector```
 
 
