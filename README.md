@@ -19,26 +19,33 @@ Before installing, make sure you have [Node.js](https://nodejs.org/) installed.
 
 To install the package, run the following command:
 
-```console
+## Usage
+
+The `logs-injector` tool can be used to automatically insert `console.log` statements into your JavaScript functions. Here’s how to use it effectively:
+
+### Step 1: Install the Package
+
+Make sure you have installed the package using npm:
+
+```bash
 npm install logs-injector
 ```
 
-
 ## Start 
 
-```console 
+```bash
 install logs-injector
 ```
 
 ## Run the Tool
 
-```console
+```bash
 node path/to/logs-injector.js path/to/your/javascript-file.js
 ```
 
 ## Example
 
-```console
+```bash
 function multiply(x, y) {
   return x * y;
 }
@@ -48,7 +55,7 @@ console.log(multiply(5, 10));
 
 ## After Running logs-injector
 
-```console
+```bash
 function multiply(x, y) {
   console.log('Function: multiply | Variables: x, y');
   return x * y;
@@ -61,21 +68,18 @@ console.log(multiply(5, 10));
 ## Features
 
 
-## How It Works:
-
 Parsing: The JavaScript file is read and parsed into an AST.
 
-```console
+```bash
 const ast = parser.parse(code, { sourceType: 'module', plugins: ['jsx'] });
 ```
 
-## Traversing: 
 
 ## Explanation
 
 The AST is traversed to locate function declarations, expressions, and arrow functions.
 
-```console
+```bash
 traverse(ast, {
     FunctionDeclaration(path) {
         insertConsoleLog(path);
@@ -88,8 +92,6 @@ traverse(ast, {
     },
 });
 ```
-
-## Usage
 
 ## Log Injection: 
 
